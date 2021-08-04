@@ -1,38 +1,240 @@
+#root {
+  height: inherit;
+  width: inherit;
+}
+
 .App {
   text-align: center;
+  font-family: arial;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+  width: inherit;
+  height: inherit;
+  background: ghostwhite;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.QuizTitle {
+  height: 100px;
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.QuizTitle h1 {
+  margin: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Menu {
+  width: 700px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: rgb(83, 130, 161);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.Menu Input, Button {
+  width: 300px;
+  height: 50px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.Menu Button {
+  width: 300px;
+  height: 50px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
   color: white;
+  background: #e6b965 !important;
 }
 
-.App-link {
-  color: #61dafb;
+.MenuWrapper {
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: rgb(69, 108, 134);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.UserName, .quiz-title {
+  color: wheat;
+}
+
+.MenuDescription {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 500px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: wheat;
+}
+
+Button:hover {
+  cursor: pointer;
+}
+
+.Quiz {
+  width: 700px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: rgb(69, 108, 134);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Quiz .wrapper {
+  width: 90%;
+  height: 90%;
+}
+
+.Questions {
+  max-height: 300px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Questions Button {
+  width: 300px;
+  height: 50px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  background: rgb(69, 108, 134, 90%);
+  color: wheat;
+}
+
+.Questions .ant-btn:hover, .ant-btn:focus {
+  border: 2px solid #40a9ff;
+  background: #e6b965 !important;
+}
+
+.footerButton Button {
+  width: 300px;
+  height: 50px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  background: #e6b965 !important;
+  color: ghostwhite; 
+}
+
+.QuizWrap {
+  min-height: 400px;
+  max-height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.QuizWrap h3 {
+  min-height: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.Option {
+  font-size: 25px;
+}
+
+.checkbox-options {
+  width: 290px;
+  text-align: left;
+  justify-content: center;
+  margin: auto;
+}
+
+.checkboxes {
+  background-color: rgb(69, 108, 134, 90%);
+  padding: 5px 0;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.checkboxes .Option {
+  font-size: 20px;
+  margin-left: 15px;
+  color: wheat;
+  opacity: 1;
+}
+
+.multipleChoice-Title {
+  color: wheat;
+  background: rgb(69, 108, 134, 90%);
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.restartGame {
+  margin-top: 40px;
+}
+
+.restartGame Button {
+  width: 300px;
+  height: 50px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  background: #e6b965 !important;
+  color: ghostwhite; 
+}
+
+.endPage-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.endPage {
+  width: 100%;
+  height: 100%;
+}
+
+.endPage-Title {
+  padding-top: 20px;
+  font-size: 20px;
+  color: wheat;
+}
+
+.endPage-message {
+  background: ghostwhite;
+  opacity: 90%;
+  font-size: 20px;
+  color: black;
+}
+
+.endPage-Score{
+  font-size: 40px;
+  background: ghostwhite;
+  color: black;
+  opacity: 90%;
+}
+
+.endPage-background-image {
+  height: 80%;
+  width: 90%;
+  justify-content: center;
+  margin: auto;
+}
+
+.endPage-middle-wrapper {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }

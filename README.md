@@ -2,7 +2,7 @@
 
 This is a small quiz application with simple questions
 
-## Created with React JS
+### Created with React JS
 
 ## Steps to run the Quiz
 

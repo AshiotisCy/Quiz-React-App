@@ -7,7 +7,7 @@ import _ from "lodash"
 function Quiz() {
 
     const { questions, setGameState, getResults, userName, setUserName } = useContext(GameStateContext)
-    const [currentQuestion, setCurrentQuestion] = useState(7)
+    const [currentQuestion, setCurrentQuestion] = useState(0)
     const [isCheckedSingle, setIsCheckedSingle] = useState()
     const [correctAnswer, setCorrectAnswer] = useState()
     const [points, setPoints] = useState()
